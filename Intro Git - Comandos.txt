@@ -1,0 +1,193 @@
+-------------------------------------------------------------------------------
+							** INTRO AO GIT **
+-------------------------------------------------------------------------------
+
+// O Git reresenta a evolução do código-fonte por meio de um grafo de commits.
+
+--  Guarda o histórico do código, é  possivel acessar e vizualizar todo o código ao longo do tempo. Ao se Commitar é criado um código HASH, que é um "documento" do arquivo, assim podendo ter o histórico de todas as mudanças desde o inicio.
+
+--  Para que serve?
+- Controle de versão do src (source);
+- Versionamento;
+- Junto codigo dos desenvolvedores;
+- Ajuda na analise de conflito.
+
+// GRAPHOS:         Estrutura usada pelo Git para criação de Códigos Fonte.
+// MASTER/MAIN:     Estrutura principal ao qual se ramifica os branchs.
+// BRANCH:          São ramificações feitas pelos programadores com diversos códigos para a estruturação do programa criado.
+// REPOSITÓRIO:     Onde se deposita os projetos e toda sua estrutura.
+// COMMIT:          Salvar.
+// STAGING AREA:    Local aonde se encontram os arquivos para serem Comitados *(Verde).
+// UNTRACKED:       Arquivos fora da Staging Area (Area de Transferência) *(Vermelho).
+// HEAD:            Ramificação que esta mais a frente/ponta
+
+-------------------------------------------------------------------------------
+							    ** COMANDOS GIT **
+-------------------------------------------------------------------------------
+
+git version
+--	Verifica se o git esta instalado e qual a versão instalada.
+
+git init
+--	Cria um repositório vazio dentro da pasta escolhida.
+
+tree .git/
+--	Mostra a estrutura de pastas (necessita instalação), onde o git armazena todos os arquivos.
+
+echo (nome do arquivo)
+--	Cria o arquivo (fica na area Untracked files)
+
+git add
+--	Envia o arquivos para a staging area (index), pronto para ser comitados.
+
+git add -A / git add --all
+--	Envia os arquivos para a staging area todos de uma só vez, pronto para ser comitados.
+
+git status
+--	apresenta o estatus dos teus arquivos, em qual área se encontra
+
+git branch
+-- Lista as branchs e aprensenta em qual esta em verde.
+
+git commit -m "mensagem de commit"
+--	Comita os arquivos.
+
+git log
+--	Mostra a lista de commits já realizados.
+
+mv nomeArquivoAtual nomeArquivoNovo
+--	Altera o nome do arquivo.
+
+git log --oneline
+--	Mostra a lista de commits já realizados, mais organizados.
+
+
+-------------------------------------------------------------------------------
+							** Branching e Merging **
+-------------------------------------------------------------------------------
+// Branch é uma linha de desenvolvimento que permite isolar o código de uma nova funcionalidade, mantendo a linha base estável, evitando o represamento de código. (branch é apenas uma referência para um commit).
+	|
+	|
+	V
+
+git branch nomeFeature
+--	Cria um branch.
+
+git log -- oneline --decorate
+--	Mostra a lista de commits já realizados organizados e informações da master e branch atual.
+
+git checkout nomeFeature
+--	Muda de branch/feature. **(Só é possivel mudar de pasta se o arquivos estiver salvo)
+
+git log -- oneline --decorate --all
+--	Mostra a lista de commits já realizados organizados, informações da master, branch atual e outros.
+
+git merge master
+--  Puxa tudo que tem na master para sua branch.
+
+git merge nomeFeature
+--	Envia sua Feature para junto da Master
+
+// Após o merge, se houver a mensagem "fast-forward", significa que seu merge deu sucesso. A estratégia de fast-forward é apenas uma atualização da referência e só é possivel quando não existe divergência entre os branchs.
+
+git branch -d nomeFeature
+--	Deleta a feature.
+
+git checkout -b nomeFeature
+--	Cria uma branch/feature e muda para ela.  *(Cria uma copia atual de tudo dentro da Master) **(Só é possivel mudar de pasta se o arquivos estiver salvo)
+
+git log -- oneline --decorate --all --graph
+--	Mostra a lista de commits já realizados organizados, informações da master, branch atual, outros e ramificação.
+
+// A estratégia recursive é utilizada quando existe divergência entre os branchs e um commit ara unir ambos se torna necessário.
+
+-------------------------------------------------------------------------------
+									** Stash **
+-------------------------------------------------------------------------------
+// É uma área, onde é possivel armazenar código, sem a necessidade de realizar um commit, permitindo mudar de branch ou realizar outras operações de forma organizada.
+	|
+	|
+	V
+
+git stash save "arquivo"
+--	Salva o arquivo dentro do identificador/stash.
+
+git stash list
+--	Lista tudo dentro do identificador/stash.
+
+git stash apply stash@{0}
+--	recupera o arquivo do stash para a staging area (index), sem remover do stash.
+
+git stash drop stash@{0}
+--	Exclui o arquivo do stash
+
+git stash pop
+--	recupera o arquivo e exclui do stash
+
+git stash branch nomeFeature
+--	Cria uma branch no stash.
+
+-------------------------------------------------------------------------------
+							** Remote, Pull e Push **
+-------------------------------------------------------------------------------
+// Push (empurrar), é a ação de atualizar uma referencia remota a artir de uma referencia local, enviando os objetos necessários ara satisfazer as referências atualizadas.
+	|
+	|
+	V
+
+git push
+--	Empurra o grapho de commits.
+
+git remote add origin     url
+--	Cria um repositório remoto.
+
+git remote
+--	Verifica se o repositório foi criado.
+
+git remove -v
+--	Verifica se o repositório foi criado e mostra a url
+
+git push origin master
+--	Empurra o grapho de commits para Origin a partir do Master
+
+
+-------------------------------------------------------------------------------
+// Pull (puxar), é a ação de atualizar uma referencia remota a artir de uma referencia local, trazendo os objetos necessários ara satisfazer as referências atualizadas.
+	|
+	|
+	V
+
+git pull origin master
+--	Puxa o grapho de commits e faz merge automáticamente.
+
+git clone    url
+--	Cria uma cópia do grapho para o diretório informado.
+
+git fetch
+--	Puxa somente determinadas atualizações.
+
+git diff master origin/master
+--	faz comparações entre arquivos.
+
+git merge origin/master
+--	Comita.
+
+-------------------------------------------------------------------------------
+									** Reset **
+-------------------------------------------------------------------------------
+// Faz o master apontar para um outro commit especificado, assim modificando 	a refêrencia do master
+
+git reset --soft     hash
+--	Aponta para o hash informado, apenas altera a referencia do branch.
+
+git reset --mixed     hash
+--	Aponta para o hash informado e remove da staging area(index).
+
+git reset --hard      hash
+--	Aponta para o hash informado e remove também do Working Directory.
+
+git reflog
+--	Desfaz o reset
+
+git push origin master -f
+--	Força o push
