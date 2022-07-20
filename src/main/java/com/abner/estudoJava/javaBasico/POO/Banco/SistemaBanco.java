@@ -4,7 +4,7 @@ public class SistemaBanco {
 
     public static void main(String[] args) {
 
-        // Invocando Objeto.
+        // Criando Objeto (Fazendo uma Instancia).
 
         var operacao = new Operacoes();
 
