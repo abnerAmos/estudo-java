@@ -1,4 +1,4 @@
-package com.abner.estudoJava.javaBasico.POO.Banco;
+package com.abner.estudoJava.javaBasico.poo.Banco;
 
 public class Operacoes {
 

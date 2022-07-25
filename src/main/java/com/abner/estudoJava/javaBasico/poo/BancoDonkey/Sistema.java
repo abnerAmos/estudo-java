@@ -1,4 +1,4 @@
-package com.abner.estudoJava.javaBasico.POO.BancoDonkey;
+package com.abner.estudoJava.javaBasico.poo.BancoDonkey;
 
 public class Sistema {
 
