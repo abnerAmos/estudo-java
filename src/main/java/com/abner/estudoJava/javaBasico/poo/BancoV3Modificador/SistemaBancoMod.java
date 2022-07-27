@@ -1,18 +1,18 @@
-package com.abner.estudoJava.javaBasico.poo.BancoDonkeyV2;
+package com.abner.estudoJava.javaBasico.poo.BancoV3Modificador;
 
-public class SistemaBanco {
+public class SistemaBancoMod {
 
     public static void main(String[] args) {
 
-        var c1 = new ContaBanco();
-        var c2 = new ContaBanco();
-        var op = new OperacoesBanco();
+        var c1 = new ContaMod();
+        var c2 = new ContaMod();
+        var op = new OpBancoMod();
 
-        c1.cliente = "Abner Amos";
-        c1.saldo = 1000.00;
+        c1.setCliente("Abner Amos");
+        c1.setSaldo(1000.00);
 
-        c2.cliente = "Erik Gonzaga";
-        c2.saldo = 5000.00;
+        c2.setCliente("Erik Gonzaga");
+        c2.setSaldo(5000.00);
 
         op.saldoAtual(c1);
         op.saldoAtual(c2);

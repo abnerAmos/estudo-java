@@ -1,6 +1,4 @@
-package com.abner.estudoJava.javaBasico.poo.BancoModificador;
-
-import com.abner.estudoJava.javaBasico.poo.BancoDonkeyV2.ContaBanco;
+package com.abner.estudoJava.javaBasico.poo.BancoV3Modificador;
 
 public class OpBancoMod {
 

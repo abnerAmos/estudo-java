@@ -1,4 +1,4 @@
-package com.abner.estudoJava.javaBasico.poo.BancoDonkeyV2;
+package com.abner.estudoJava.javaBasico.poo.BancoV2;
 
 public class OperacoesBanco {
 

@@ -1,4 +1,4 @@
-package com.abner.estudoJava.javaBasico.poo.BancoModificador;
+package com.abner.estudoJava.javaBasico.poo.BancoV3Modificador;
 
 public class ContaMod {
 
