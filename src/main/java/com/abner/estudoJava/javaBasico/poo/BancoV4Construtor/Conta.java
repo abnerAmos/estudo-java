@@ -6,11 +6,13 @@ public class Conta {
     private final Integer agencia = 22;
     private String cliente;
     private Double saldo;
+    private Genero genero;
 
-    public Conta(String cliente, Double saldo, String tipoConta) {
+    public Conta(String cliente, Double saldo, String tipoConta, Genero genero) {
         this.cliente = cliente;
         this.saldo = saldo;
         this.tipoConta = tipoConta;
+        this.genero = genero;
     }
 
     public String getCliente() {
