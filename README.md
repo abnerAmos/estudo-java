@@ -3,9 +3,8 @@
 ### **Apresentação de todos os steps de aprendizado** 
 
 <hr/>
-Aprendizados adquiridos até o momento:
+Conhecimentos adquiridos até o momento:
 
-<br/>
 - Introdução ao Java
 - Fundamentos Java
 - JRE, JDK e JVM
@@ -28,6 +27,12 @@ Aprendizados adquiridos até o momento:
 - Programação Orientada a Objetos
 - Ponteiros (Referências)
 - Garbage Colector
-- Collection
+- List, Set e Map
 - Modificadores de Acesso
 - Getters e Setters
+- Construtores
+- Modificador Final
+- Modificador Static (Import Static)
+- Constantes
+- Enum
+- Herança

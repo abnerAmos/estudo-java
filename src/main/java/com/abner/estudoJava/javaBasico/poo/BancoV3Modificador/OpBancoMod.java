@@ -2,6 +2,8 @@ package com.abner.estudoJava.javaBasico.poo.BancoV3Modificador;
 
 public class OpBancoMod {
 
+    // Comportamento (ações, métodos)
+
     void depositar(ContaMod conta, Double valor) {
         Double saldo2 = conta.getSaldo() + valor;
         conta.setSaldo(saldo2);

@@ -1,4 +1,4 @@
-package com.abner.estudoJava.javaBasico.poo.BancoV4Construtor;
+package com.abner.estudoJava.javaBasico.poo.BancoV5Herança;
 
 public class SistemaBanco {
 
@@ -6,8 +6,8 @@ public class SistemaBanco {
 
         // Criando Objeto (Fazendo uma Instancia (new)).
 
-        var c1 = new Conta("Abner Amos", 1000.00, "Corrente", Genero.MASCULINO);
-        var c2 = new Conta("Erik Gonzaga", 5000.00, "Poupança", Genero.MASCULINO);
+        var c1 = new Cliente("Abner Amos", 1000.00, "Corrente", Genero.MASCULINO);
+        var c2 = new Cliente("Erik Gonzaga", 5000.00, "Poupança", Genero.MASCULINO);
         var op = new OpBanco();
         Genero genero = Genero.MASCULINO;       // Enum: Inalterável
 
@@ -24,7 +24,8 @@ public class SistemaBanco {
         op.sacar(c1, 10000.00);
         op.transferir(c2, c1, 10000.00);
         System.out.println("-------------------------------------");
-        System.out.println(c1.getCliente() + " - Genero: " + genero.name());
-        System.out.println(c2.getCliente() + " - Genero: " + genero.name());
+        System.out.println("Dados Cadastrais do Cliente: \n");
+        System.out.println(c1.getCliente() + ", possui conta: " + c1.getTipoConta() + " - Genero: " + genero.name());
+        System.out.println(c2.getCliente() + ", possui conta: " + c2.getTipoConta() + " - Genero: " + genero.name());
     }
 }

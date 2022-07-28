@@ -1,14 +1,13 @@
-package com.abner.estudoJava.javaBasico.poo.BancoV4Construtor;
+package com.abner.estudoJava.javaBasico.poo.BancoV5Herança;
 
 public class Conta {
 
     // Caracteristicas (variaveis membro da classe, atributos).
 
-    private final String tipoConta;
-    private final Integer agencia = 22;     // Final: Bloqueando seu valor, para não ser sobrescrito
+    private String tipoConta;           // Privando um atributo
+    private Integer agencia;
     private String cliente;
     private Double saldo;
-    private Genero genero;                  // Privando um atributo
 
     // Criando um construtor, define a forma que será construido.
 
@@ -16,7 +15,6 @@ public class Conta {
         this.cliente = cliente;
         this.saldo = saldo;
         this.tipoConta = tipoConta;
-        this.genero = genero;
     }
 
     // Get: Encapsulando um atributo
@@ -36,6 +34,22 @@ public class Conta {
 
     public void setSaldo(Double saldo) {
         this.saldo = saldo;
+    }
+
+    public Integer getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia (Integer agencia) {
+        this.agencia = agencia;
+    }
+
+    public String getTipoConta() {
+        return tipoConta;
+    }
+
+    public void setTipoConta (String tipoConta) {
+        this.tipoConta = tipoConta;
     }
 
 }

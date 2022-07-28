@@ -2,6 +2,8 @@ package com.abner.estudoJava.javaBasico.poo.BancoV2;
 
 public class OperacoesBanco {
 
+    // Comportamento (ações, métodos)
+
     void depositar(ContaBanco conta, Double valor) {
         conta.saldo = conta.saldo + valor;
         System.out.printf("%s depositou %s com sucesso! \n", conta.cliente, valor);

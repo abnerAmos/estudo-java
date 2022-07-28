@@ -2,6 +2,8 @@ package com.abner.estudoJava.javaBasico.poo.BancoV1;
 
 public class Operacoes {
 
+    // Comportamento (ações, métodos)
+
     void verSaldo(ObjetoCliente cliente) {
         System.out.println(cliente.saldo);
     }

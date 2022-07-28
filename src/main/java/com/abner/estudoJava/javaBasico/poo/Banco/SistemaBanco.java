@@ -11,7 +11,7 @@ public class SistemaBanco {
         // Cliente 1.
 
         ContaBancaria c1 = new ContaBancaria();
-        c1.nomeCliente = "Abner Amós";
+        c1.nomeCliente = "Abner Amós";              // Atribuindo valor as variáveis
         c1.numero = 165;
         c1.agencia = 1;
         c1.tipo = "Corrente";
@@ -24,7 +24,7 @@ public class SistemaBanco {
         // Cliente 2.
 
         ContaBancaria c2 = new ContaBancaria();
-        c2.nomeCliente = "Edney Ronan";
+        c2.nomeCliente = "Edney Ronan";             // Atribuindo valor as variáveis
         c2.numero = 179;
         c2.agencia = 2;
         c2.tipo = "Corrente";

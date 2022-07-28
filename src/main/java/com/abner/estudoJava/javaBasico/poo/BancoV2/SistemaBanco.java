@@ -4,15 +4,19 @@ public class SistemaBanco {
 
     public static void main(String[] args) {
 
+        // Criando Objeto (Fazendo uma Instancia (new)).
+
         var c1 = new ContaBanco();
         var c2 = new ContaBanco();
         var op = new OperacoesBanco();
 
-        c1.cliente = "Abner Amos";
+        c1.cliente = "Abner Amos";                  // Atribuindo valor as variáveis
         c1.saldo = 1000.00;
 
         c2.cliente = "Erik Gonzaga";
         c2.saldo = 5000.00;
+
+        // Executando Operações
 
         op.saldoAtual(c1);
         op.saldoAtual(c2);
