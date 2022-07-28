@@ -36,3 +36,4 @@ Conhecimentos adquiridos até o momento:
 - Constantes
 - Enum
 - Herança
+- Abstract
