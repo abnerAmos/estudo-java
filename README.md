@@ -37,3 +37,4 @@ Conhecimentos adquiridos até o momento:
 - Enum
 - Herança
 - Abstract
+- Interface (Implements)

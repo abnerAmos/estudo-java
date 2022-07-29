@@ -35,5 +35,5 @@ Com e Sem Parâmetros, Com e Sem Retorno, Sobrecarga, Varargs;
 <p>
 
 - **Pogramação Orientada a Objetos**<p>
-Garbage Colector, Modificadores Final e Static, Modificadores de Acesso, Ponteiros, Getters e Setters, Construtores, Constantes, Enum, Herança, Abstract, Etc;
+Garbage Colector, Modificadores Final e Static, Modificadores de Acesso, Ponteiros, Getters e Setters, Construtores, Constantes, Enum, Herança, Abstract, Interface (implements), Etc;
 <p>
