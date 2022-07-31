@@ -38,3 +38,4 @@ Conhecimentos adquiridos até o momento:
 - Herança
 - Abstract
 - Interface (Implements)
+- Polimorfismo

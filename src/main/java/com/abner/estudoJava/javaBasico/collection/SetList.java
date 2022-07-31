@@ -1,4 +1,4 @@
-package com.abner.estudoJava.javaBasico.collections;
+package com.abner.estudoJava.javaBasico.collection;
 
 import java.util.HashSet;
 import java.util.Set;
