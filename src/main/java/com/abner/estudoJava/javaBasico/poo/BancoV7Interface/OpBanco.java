@@ -17,7 +17,7 @@ public class OpBanco {
     }
 
     void sacar(Conta conta, Double valor) {
-        Double valorTx = taxas.taxaSaque(valor);
+        Double valorTx = taxas.taxaSaque();
         Double saqueMaisTx = valorTx + valor;
         if (saqueMaisTx > conta.getSaldo()) {
             System.out.printf("%s seu saldo é insuficiente para sacar %s \n", conta.getCliente(), valor);
@@ -29,7 +29,7 @@ public class OpBanco {
         }
 
     void transferir(Conta contaSaque, Conta contaDeposito, Double valor) {
-        Double valorTx = taxas.taxaTransferencia(valor);
+        Double valorTx = taxas.taxaTransferencia();
         Double transfMaisTx = valorTx + valor;
         if (valor > contaSaque.getSaldo()) {
             System.out.printf("%s seu saldo é insuficiente para transferir %s \n", contaSaque.getCliente(), valor);

@@ -19,7 +19,7 @@ public class MapTeste {
 
         nomes.put("ABNER AMOS", 29);
         nomes.put("ERIK GONZAGA", 35);
-        nomes.put("EDNEY RONAN", 41);
+        nomes.put("EDNEY RONAN", 40);
         nomes.put("RICARDO JONAS", 31);
 
         Integer idade = nomes.get(nome);
