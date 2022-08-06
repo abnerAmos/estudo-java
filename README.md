@@ -22,7 +22,7 @@ Conhecimentos adquiridos até o momento:
 - Escopos
 - Classes Wrappers
 - Varargs
-- Sobrecarga de Métodos
+- Sobrecarga e Sobrescrita de Métodos
 - Estruturas de Classe
 - Programação Orientada a Objetos
 - Ponteiros (Referências)
