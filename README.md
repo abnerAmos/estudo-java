@@ -39,3 +39,4 @@ Conhecimentos adquiridos até o momento:
 - Abstract
 - Interface (Implements)
 - Polimorfismo
+- Regex (Expressões Regulares)

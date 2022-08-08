@@ -1,4 +1,4 @@
-package com.abner.estudoJava.javaBasico.materiasDiversas.Utilitarios;
+package com.abner.estudoJava.javaBasico.materiasDiversas.utilitarios;
 
 public class Random {
 

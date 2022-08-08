@@ -1,4 +1,4 @@
-package com.abner.estudoJava.javaBasico.materiasDiversas.Exceptions;
+package com.abner.estudoJava.javaBasico.materiasDiversas.exceptions;
 
 import java.io.IOException;
 

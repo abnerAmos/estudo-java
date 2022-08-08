@@ -1,4 +1,4 @@
-package com.abner.estudoJava.javaBasico.materiasDiversas.ModificadorStatic;
+package com.abner.estudoJava.javaBasico.materiasDiversas.modificadorStatic;
 
 public class Conta {
 
