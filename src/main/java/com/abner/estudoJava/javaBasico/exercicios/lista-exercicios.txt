@@ -1,0 +1,131 @@
+|Lista Exercícios |
+------------------
+
+1) solicite um número do usuário.
+	- informe se o número é par ou ímpar
+
+
+2) Solicite peso e altuda do usuário:
+	- calcule e informe o IMC
+	- informa para o usuário qual a faixa dele de acordo com a tabela IMC
+
+
+3) Solicite uma palavra do usuário:
+	- informe se esse palavra é um palindromo
+	- link: https://www.todamateria.com.br/palindromo/
+
+
+4) Solicite um número do usuário:
+	- informa se o número é primo
+	- link: https://escolakids.uol.com.br/matematica/numeros-primos.htm
+
+
+5) Sequencia de Fibonacci:
+	- Receba um número do usuário e mostre todo a seq de fibonacci até o 
+	  número informado
+    - link: https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci
+
+
+6) Receba a data de nascimento do usuário:
+	- descubra quantos anos de vida tem a pessoa (considere cara ano como 365 dias)
+
+
+7) Crie uma lista de nomes desordenada e faça:
+	- ordenacao crescente
+	- ordenacao decrescente
+
+
+7) Crie uma lista de números desordenada e faça:
+	- ordenacao crescente
+	- ordenacao decrescente
+
+
+8) Vc trabalha em uma empresa de financiamento de carros. Para aprovar um financiamento, o valor da parcela não pode comprometer mais que 30% do salário do cliente. Construa um sistema que recebe o valor da parcela do financiamento de um carro e o salário do cliente que deseja comprar o carro. Com base na regra acima, o sistema deve informar se o financiamento foi aprovado ou não.
+
+
+9) Solicite para o usuário uma sequencia de números separados por vígula:
+	- transforma em uma lista
+	- informe para o usuário qual é o maior número da lista
+	- informe para o usuário qual é o menor número da lista
+	- informe a quantidade de números maiores que 10
+	- remova os números repetidos da lista
+	- exibir a soma de todos os números da lista
+
+
+10) vc tranbalha em uma empresa que concedo empréstimos para as empresa.
+	- solicite o faturamento de uma empresa nos ultimos 12 meses
+	- calcule o faturamento médio mensal da empresa
+	- de acordo com a média encontrada, informa o valor de empréstimo a ser concedido
+	  conforme lista abaixo:
+	  	-> média menor que 2000 		- 0
+	  	-> média entre 2000 e 10000		- 20% do faturamento anual
+	  	-> média entre 10000 e 20000	- 30% do faturamento anual
+	  	-> acima de 20000 				- 40% do faturamento anual
+
+
+11) Escreva um algoritmo que recebe uma temperatura em celsius e converta para Fahrenheit.
+	- fórmula: Fahrenheit = (celsius * 1.8) + 32
+	- exemplo: 30°C = 86°F
+
+
+12) Sabendo que a gasolina rende 30% a mais que o álcool:
+	- solicite o valor do álcool e da gasolina
+	- informe ao usuáro qual deles é o mais econômico
+
+
+13) Solicite um texto do usuário e remova do texto as preposicoes abaixo:
+	- de, da, do, dos, das
+
+
+14) copie um texto grande da internet e armazene em uma variável:
+	- receba uma palavra do usuário
+	- exibir quantas vezes essa pelavra aparece no texto
+
+
+15) Vc trabalha em uma casa de cambio, sabendo que 2 dólar = 4.93 reais e que o spread
+    custo 5.00 reais e o IOF é 0.35% do valor desejado, faça:
+    - receba do usuário a quantidade de dólares que ele deseja comprar
+    - retorno o valor em reais que o usuário precisa pagar
+
+
+16) Você trabalha em uma casa de tintas. Considere as informacoes abaixo:
+	a) existe do tamanhos de latas de tinta. 18L e 3.6L
+	b) com 1 litro de tinta da pra pintar 6m quadrados
+	c) a Lata de 18L custa 80,00 e o galão de 3.6L custa 25,00
+	d) 10% a mais do total a ser pintado deve ser adicinado devido as perdas
+	Construa um programa que recebe do usuário a área em metros quadrados a ser pintada:
+	- exibir o total de latas e galoes e serem comprados
+	- o sistema deve calcular o melhor valor misturando latas e galoes
+
+17) Criar um termometro que informe se esta com
+    Hiportermia com 35º ou menos
+    Estável entre 35 e 37.3
+    Febricula entre 37.4 e 37.8
+    febre entre 37.9 e 39
+    febre alta 39+
+
+
+18) Pedir o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% sobre o que ultrapassar este valor, calcular e escrever o seu salário total.
+
+
+19) crie duas listas e faça a junção delas em uma única lista
+
+
+20) Vc trabalha no mercado livre e precisa evitar que um comprador informe seu contato 
+    para o vendedos no campo de comentários, assim evitar que essa venda ocorra fora da
+    plataforma e o ML perde na comissão. Receba do usuáro um comentário (texto) e 
+    substitua as palavras proibidas
+    - palavras proibidas: contato, telefone, email, whattsapp, tel
+    - substituir por: -- nao informar dados pessoais --
+
+
+21) crie um programa que recebe do usuário um documento e o tipo do documento.
+	- exibir o documento formatado de acordo com o tipo formatado.
+	- se o forma estiver inválido, avisar que o documento é inválido
+	- tipos: RG(11.111.111-1), CPF(111.111.111-11), CNPJ(11.111.111/1111-11)
+
+
+22) crie um programa que recebe o nome completo do usuário e faça:
+	- remover as preposicoes conforme exercicio anterior
+	- exibir as iniciais do nome após remocao das preposicoes
+	- exemplo: Edney Ronan Roldao de Souza - ERRS
