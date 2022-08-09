@@ -40,3 +40,4 @@ Conhecimentos adquiridos até o momento:
 - Interface (Implements)
 - Polimorfismo
 - Regex (Expressões Regulares)
+- Utilitários
