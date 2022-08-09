@@ -41,3 +41,7 @@ Garbage Colector, Modificadores Final e Static, Modificadores de Acesso, Ponteir
 - **Expressões Regulares:**<p>
   Agrupadores, Quantificadores, Metacaracteres e Modificadores;
 <p>
+
+- **Utilitários:**<p>
+  Random, LocalDate;
+<p>
