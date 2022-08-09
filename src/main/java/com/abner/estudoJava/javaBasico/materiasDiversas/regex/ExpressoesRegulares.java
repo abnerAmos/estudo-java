@@ -1,5 +1,8 @@
 package com.abner.estudoJava.javaBasico.materiasDiversas.regex;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class ExpressoesRegulares {
 
     // Escape:              \\   Para aceitar caracteres especiais do java como texto;
@@ -85,6 +88,7 @@ public class ExpressoesRegulares {
 
         String nome4 = "AbNeR Amos";
         boolean teste9 = nome4.matches("\\w{2,} \\w{1,4}");
-        System.out.println(teste9);
+       // System.out.println(teste9);
+
     }
 }
