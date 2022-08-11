@@ -41,3 +41,4 @@ Conhecimentos adquiridos até o momento:
 - Polimorfismo
 - Regex (Expressões Regulares)
 - Utilitários
+- I/O

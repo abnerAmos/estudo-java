@@ -45,3 +45,7 @@ Garbage Colector, Modificadores Final e Static, Modificadores de Acesso, Ponteir
 - **Utilitários:**<p>
   Random, LocalDate;
 <p>
+
+- **I|O:**<p>
+  Criando um diretório, escrever e ler arquivo;
+<p>
