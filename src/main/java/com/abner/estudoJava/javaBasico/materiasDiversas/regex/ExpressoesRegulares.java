@@ -88,7 +88,7 @@ public class ExpressoesRegulares {
 
         String nome4 = "AbNeR Amos";
         boolean teste9 = nome4.matches("\\w{2,} \\w{1,4}");
-       // System.out.println(teste9);
+        // System.out.println(teste9);
 
     }
 }
