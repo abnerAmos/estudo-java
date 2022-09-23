@@ -49,3 +49,15 @@ Garbage Colector, Modificadores Final e Static, Modificadores de Acesso, Ponteir
 - **I|O:**<p>
   Criando um diretório, escrever e ler arquivo;
 <p>
+
+- **Validador de CPF:**<p>
+  Implementando um Validador de CPF;
+
+<p>
+
+## Referências:
+
+[API Caelum Stella - Validador de CPF](https://www.alura.com.br/artigos/validando-cpf-com-java-atraves-do-stella?gclid=Cj0KCQjwj7CZBhDHARIsAPPWv3d7uxJr-khje8M6Y_Nxe9I7IopqivA3DSm_FU7PaUS0jxvhE0a4XjUaAghgEALw_wcB)
+
+## Tutoria:
+[Edney Ronan Roldão - Tutor Sênior](https://github.com/edneyRoldao)
