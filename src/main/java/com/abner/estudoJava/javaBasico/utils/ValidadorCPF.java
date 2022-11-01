@@ -1,4 +1,4 @@
-package com.abner.estudoJava.javaBasico.validadorCPF;
+package com.abner.estudoJava.javaBasico.utils;
 
 import br.com.caelum.stella.ValidationMessage;
 import br.com.caelum.stella.validation.CPFValidator;
