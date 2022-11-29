@@ -27,6 +27,7 @@ Conhecimentos adquiridos até o momento:
 - Programação Orientada a Objetos
 - Ponteiros (Referências)
 - Garbage Colector
+- Data e Hora (LocalDateTime)
 - List, Set e Map
 - Modificadores de Acesso
 - Getters e Setters
