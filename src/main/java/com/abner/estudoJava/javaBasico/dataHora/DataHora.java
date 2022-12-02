@@ -3,6 +3,7 @@ package com.abner.estudoJava.javaBasico.dataHora;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 public class DataHora {
@@ -33,6 +34,13 @@ public class DataHora {
         LocalDate date = LocalDate.parse("10/08/1993", formatter);
         LocalDateTime dateTime = LocalDateTime.parse("10/08/1993 10:30", formatter2);
 
+        // Convertendo Instant em LocalDate e LocalDateTime
+        LocalDate instantToLocalDate = LocalDate.ofInstant(instantParse, ZoneId.systemDefault());
+        LocalDate instantToLocalDateCustom = LocalDate.ofInstant(instantParse, ZoneId.of("Portugal"));
+        LocalDateTime instantToLocalDateTime = LocalDateTime.ofInstant(instantParse, ZoneId.systemDefault());
+        LocalDateTime instantToLocalDateTimeCustom = LocalDateTime.ofInstant(instantParse, ZoneId.of("Portugal"));
+
+
         System.out.println(localDateTime);
         System.out.println(localDate);
         System.out.println(instant);
@@ -44,10 +52,23 @@ public class DataHora {
         System.out.println(date);
         System.out.println(dateTime);
         System.out.println("----------------------------");
-        System.out.println("----------------------------");
 
         // Customizando Data e Hora
         System.out.println(localDateParse.format(formatter));
         System.out.println(localDateTimeParse.format(formatter2));
+        System.out.println("----------------------------");
+
+        System.out.println(instantToLocalDate);
+        System.out.println(instantToLocalDateCustom);
+        System.out.println(instantToLocalDateTime);
+        System.out.println(instantToLocalDateTimeCustom);
+        System.out.println("----------------------------");
+
+        // Obtendo apenas, dia mês ou ano de uma data
+        System.out.println("Dia: " + localDateParse.getDayOfMonth());
+        System.out.println("Dia: " + localDateParse.getMonth());
+        System.out.println("Dia: " + localDateParse.getYear());
+        System.out.println("Dia: " + localDateTimeParse.getHour());
+        System.out.println("Dia: " + localDateTimeParse.getMinute());
     }
 }
