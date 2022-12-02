@@ -1,9 +1,6 @@
 package com.abner.estudoJava.javaBasico.dataHora;
 
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 
 public class DataHora {
@@ -66,9 +63,21 @@ public class DataHora {
 
         // Obtendo apenas, dia mês ou ano de uma data
         System.out.println("Dia: " + localDateParse.getDayOfMonth());
-        System.out.println("Dia: " + localDateParse.getMonth());
-        System.out.println("Dia: " + localDateParse.getYear());
-        System.out.println("Dia: " + localDateTimeParse.getHour());
-        System.out.println("Dia: " + localDateTimeParse.getMinute());
+        System.out.println("Mês: " + localDateParse.getMonth());
+        System.out.println("Ano: " + localDateParse.getYear());
+        System.out.println("Hora: " + localDateTimeParse.getHour());
+        System.out.println("Minuto: " + localDateTimeParse.getMinute());
+        System.out.println("----------------------------");
+
+        // Adicionando ou Subtraindo Tempo(Dia, Mês, Ano ou Horas)
+        LocalDate addDays = localDateParse.plusDays(7);
+        LocalDate subtDays = localDateParse.plusDays(10);
+        System.out.println(addDays);
+        System.out.println(subtDays);
+        System.out.println("----------------------------");
+
+        // Calculando tempo entre datas
+        Duration duration = Duration.between(localDateTimeParse, addDays.atStartOfDay());
+        System.out.println(duration.toDays());
     }
 }
