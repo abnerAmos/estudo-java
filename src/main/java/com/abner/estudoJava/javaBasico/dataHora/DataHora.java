@@ -44,6 +44,7 @@ public class DataHora {
         System.out.println(date);
         System.out.println(dateTime);
         System.out.println("----------------------------");
+        System.out.println("----------------------------");
 
         // Customizando Data e Hora
         System.out.println(localDateParse.format(formatter));
