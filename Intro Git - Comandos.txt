@@ -37,11 +37,14 @@ tree .git/
 echo (nome do arquivo)
 --	Cria o arquivo (fica na area Untracked files)
 
-git add
+git add nomeFeature
 --	Envia o arquivos para a staging area (index), pronto para ser comitados.
 
-git add -A / git add --all
+git add -A / git add --all / git add .
 --	Envia os arquivos para a staging area todos de uma só vez, pronto para ser comitados.
+
+git reset
+--	Remove os arquivos da a staging area (index), e volta para a Untracked.
 
 git status
 --	apresenta o estatus dos teus arquivos, em qual área se encontra
