@@ -46,6 +46,12 @@ git add -A / git add --all / git add .
 git reset
 --	Remove os arquivos da a staging area (index), e volta para a Untracked.
 
+git clean -df
+--	Remove arquivos novos criados.
+
+git checkout -- .
+--	Retorna os códigos a forma original (após ultimo commit/push) antes de serem alterados.
+
 git status
 --	apresenta o estatus dos teus arquivos, em qual área se encontra
 
