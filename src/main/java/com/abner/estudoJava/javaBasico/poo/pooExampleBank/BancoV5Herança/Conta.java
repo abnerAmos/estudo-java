@@ -7,7 +7,7 @@ public class Conta {
     private String tipoConta;           // Privando um atributo
     private Integer agencia;
     private String cliente;
-    private Double saldo;
+    protected Double saldo;
 
     // Criando um construtor, define a forma que será construido.
 
@@ -18,7 +18,7 @@ public class Conta {
     }
 
     // Get: Encapsulando um atributo
-    // Set: Atualiza/Define o valor
+    // Set: Atualiza/Define o valor ...
 
     public String getCliente() {
         return cliente;
