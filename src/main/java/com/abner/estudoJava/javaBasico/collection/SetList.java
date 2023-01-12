@@ -1,15 +1,24 @@
 package com.abner.estudoJava.javaBasico.collection;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class SetList {
 
     public static void main(String[] args) {
 
-        // SetList: Utilizado para garantir que um item não será repetido.
+        // Set: Utilizado para garantir que um item não será repetido.
 
-        Set<String> nomes = new HashSet<>();
+        // HashSet: Tem um retorno mais rapido, porém não garante ordem de itens.
+        // TreeSet: Tem um retorno lento, porém garante ordem alfabética.
+        /* LinkedSet: Tem um retorno mediano, garante ordem alfabética
+           (possui uma lógica particular na inserção de dados no meio da lista). */
+
+//        Set<String> nomes = new HashSet<>();
+//        Set<String> nomes = new TreeSet<>();
+        Set<String> nomes = new LinkedHashSet<>();
 
         nomes.add("Abner Amos");
         nomes.add("Abner Amos");
