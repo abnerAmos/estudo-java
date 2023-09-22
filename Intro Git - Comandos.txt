@@ -91,24 +91,24 @@ git checkout nomeFeature
 git log -- oneline --decorate --all
 --	Mostra a lista de commits já realizados organizados, informações da master, branch atual e outros.
 
-git merge master
---  Puxa tudo que tem na master para sua branch.
-
-git merge nomeFeature
---	Envia sua Feature para junto da Master
+git merge <branch>
+--  Puxa tudo que tem na branch citada para sua branch atual.
 
 // Após o merge, se houver a mensagem "fast-forward", significa que seu merge deu sucesso. A estratégia de fast-forward é apenas uma atualização da referência e só é possivel quando não existe divergência entre os branchs.
 
-git branch -d nomeFeature
---	Deleta a feature.
+git branch -d <branch>
+--	Deleta a branch local.
 
-git checkout -b nomeFeature
---	Cria uma branch/feature e muda para ela.  *(Cria uma copia atual de tudo dentro da Master) **(Só é possivel mudar de pasta se o arquivos estiver salvo)
+// Não pode estar dentro da branch que for deletar
+
+git checkout -b <nomeBranch>
+--	Cria uma branch e muda para ela.  *(Cria uma copia de tudo na branch atual e passa para a nova criada)
+-- **(Só é possivel mudar de pasta se o arquivos estiver salvo)
 
 git log -- oneline --decorate --all --graph
 --	Mostra a lista de commits já realizados organizados, informações da master, branch atual, outros e ramificação.
 
-// A estratégia recursive é utilizada quando existe divergência entre os branchs e um commit ara unir ambos se torna necessário.
+// A estratégia recursive é utilizada quando existe divergência entre os branchs e um commit para unir ambos se torna necessário.
 
 -------------------------------------------------------------------------------
 									** Stash **
@@ -118,7 +118,7 @@ git log -- oneline --decorate --all --graph
 	|
 	V
 
-git stash save "arquivo"
+git stash save <arquivo>
 --	Salva o arquivo dentro do identificador/stash.
 
 git stash list
@@ -133,7 +133,7 @@ git stash drop stash@{0}
 git stash pop
 --	recupera o arquivo e exclui do stash
 
-git stash branch nomeFeature
+git stash branch <nomeBranch>
 --	Cria uma branch no stash.
 
 -------------------------------------------------------------------------------
@@ -147,7 +147,7 @@ git stash branch nomeFeature
 git push
 --	Empurra o grapho de commits.
 
-git remote add origin     url
+git remote add origin <url>
 --	Cria um repositório remoto.
 
 git remote
@@ -169,7 +169,7 @@ git push origin master
 git pull origin master
 --	Puxa o grapho de commits e faz merge automáticamente.
 
-git clone    url
+git clone <url>
 --	Cria uma cópia do grapho para o diretório informado.
 
 git fetch
@@ -186,13 +186,13 @@ git merge origin/master
 -------------------------------------------------------------------------------
 // Faz o master apontar para um outro commit especificado, assim modificando 	a refêrencia do master
 
-git reset --soft     hash
+git reset --soft <hash>
 --	Aponta para o hash informado, apenas altera a referencia do branch.
 
-git reset --mixed     hash
+git reset --mixed <hash>
 --	Aponta para o hash informado e remove da staging area(index).
 
-git reset --hard      hash
+git reset --hard <hash>
 --	Aponta para o hash informado e remove também do Working Directory.
 
 git reflog
