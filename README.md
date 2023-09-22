@@ -43,3 +43,5 @@ Conhecimentos adquiridos até o momento:
 - Regex (Expressões Regulares)
 - Utilitários
 - I/O
+- Stream
+- Threads
