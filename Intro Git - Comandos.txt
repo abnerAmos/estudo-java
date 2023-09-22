@@ -34,7 +34,7 @@ git init
 tree .git/
 --	Mostra a estrutura de pastas (necessita instalação), onde o git armazena todos os arquivos.
 
-echo (nome do arquivo)
+echo <nomeArquivo>
 --	Cria o arquivo (fica na area Untracked files)
 
 git add nomeFeature
