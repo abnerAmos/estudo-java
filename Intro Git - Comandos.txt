@@ -79,13 +79,13 @@ git log --oneline
 	|
 	V
 
-git branch nomeFeature
+git branch <nomeBranch>
 --	Cria um branch.
 
 git log -- oneline --decorate
 --	Mostra a lista de commits já realizados organizados e informações da master e branch atual.
 
-git checkout nomeFeature
+git checkout <nomeBranch>
 --	Muda de branch/feature. **(Só é possivel mudar de pasta se o arquivos estiver salvo)
 
 git log -- oneline --decorate --all
