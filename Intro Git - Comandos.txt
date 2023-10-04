@@ -233,3 +233,20 @@ git push origin --tags
 
 git tag -d <nomeTag>
 --	Deleta uma tag local.
+
+-------------------------------------------------------------------------------
+								** Configurações **
+-------------------------------------------------------------------------------
+// Faz o versionamento de um software
+
+git config --global user.name "nomeUsuário"
+--	Adiciona/Altera o nome do usuário do Git.
+
+git config --global user.name
+--	Mostra o nome do usuário.
+
+git config --global user.email "usuario@email.com"
+--	Adiciona/Altera o nome do email do usuário Git.
+
+git config --global user.email
+--	Mostra o nome do email do usuário.
