@@ -1,4 +1,4 @@
-package com.abner.estudoJava.javaBasico.threads;
+package com.abner.estudoJava.javaBasico.threads.porta;
 
 public class Tarefa1 implements Runnable {
 
