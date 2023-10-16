@@ -200,3 +200,53 @@ git reflog
 
 git push origin master -f
 --	Força o push
+
+-------------------------------------------------------------------------------
+									** Tag **
+-------------------------------------------------------------------------------
+// Faz o versionamento de um software
+// Regras: v.3.2.1
+// Primeiro numero <.3>: Faz referência a grandes modificações de um software, quando ele não tem o mesmo comportamento que a versão anterior.
+// Segundo numero <.2>: Faz referência a novas features implementadas.
+// Terceiro numero <.1>: Faz referência a BugFix, ajustes, documentação, pequenas modificações que não alteram o devido comportamento.
+
+git tag
+--	Lista todas as tags.
+
+git tag -n
+--	Lista todas as tags com as suas descrições.
+
+git show <versão>
+--	Traz todo o detalhamento de uma tag.
+
+git tag <versão>
+--	Cria uma nova tag com o nome/versão especificada.
+
+git tag <versão> -m "descrição"
+--	Cria uma nova tag com o nome/versão especificada, com uma descrição.
+
+git push origin <nomeTag>
+--	Envia a tag versionada para o repositório remoto.
+
+git push origin --tags
+--	Envia todas as tags versionadas para o repositório remoto.
+
+git tag -d <nomeTag>
+--	Deleta uma tag local.
+
+-------------------------------------------------------------------------------
+								** Configurações **
+-------------------------------------------------------------------------------
+// Faz o versionamento de um software
+
+git config --global user.name "nomeUsuário"
+--	Adiciona/Altera o nome do usuário do Git.
+
+git config --global user.name
+--	Mostra o nome do usuário.
+
+git config --global user.email "usuario@email.com"
+--	Adiciona/Altera o nome do email do usuário Git.
+
+git config --global user.email
+--	Mostra o nome do email do usuário.
