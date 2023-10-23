@@ -1,4 +1,4 @@
-package com.abner.estudoJava.javaBasico.collection;
+package com.abner.estudoJava.javaBasico.collection.exemplosSimples;
 
 import java.util.List;
 
