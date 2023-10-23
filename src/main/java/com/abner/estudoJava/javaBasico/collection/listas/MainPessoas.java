@@ -1,6 +1,7 @@
 package com.abner.estudoJava.javaBasico.collection.listas;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -12,7 +13,7 @@ public class MainPessoas {
         Pessoas p2 = new Pessoas("Anna Beatriz", 9);
         Pessoas p3 = new Pessoas("Abner Amos", 30);
 
-        List<Funcoes> funcoesImutaveis = p1.getFuncoes();
+        Collection<Funcoes> funcoesImutaveis = p1.getFuncoes();
 
         p1.adiciona(new Funcoes("Estudante", "Fundamental"));
         p1.adiciona(new Funcoes("Dev Web", "Jr"));
@@ -22,11 +23,13 @@ public class MainPessoas {
         List<Funcoes> funcoes = new ArrayList<>(funcoesImutaveis);
         Collections.sort(funcoes);
         System.out.println(funcoes);
+        funcoes.forEach(System.out::println);
 
         List<Pessoas> pessoas = new ArrayList<>();
         pessoas.add(p1);
         pessoas.add(p2);
         pessoas.add(p3);
-        System.out.println(pessoas.stream().mapToInt(Pessoas::getAge).sum());
+        var stream = pessoas.stream().mapToInt(Pessoas::getAge).sum();
+        System.out.println(stream);
     }
 }

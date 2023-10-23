@@ -10,7 +10,7 @@ public class SetList {
 
         // HashSet: Tem um retorno mais rapido, porém não garante ordem de itens.
         // TreeSet: Tem um retorno lento, porém garante ordem alfabética.
-        /* LinkedSet: Tem um retorno mediano, armazena dados na ordem em que se foi inserido.
+        /* LinkedHashSet: Tem um retorno mediano, armazena dados na ordem em que se foi inserido.
            (possui uma lógica particular na inserção de dados no meio da lista). */
 
 //        Set<String> nomes = new HashSet<>();
